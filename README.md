@@ -10,3 +10,4 @@ https://github.com/aaronferrucci/
 
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/CA_test_results.png "CA test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/NY_test_results.png "NY test results")
+![alt text](https://github.com/aaronferrucci/c19_data/blob/master/NJ_test_results.png "NJ test results")
