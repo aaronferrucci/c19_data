@@ -8,7 +8,7 @@ Data source: [https://covidtracking.com/](https://covidtracking.com/)
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/plot3.png "percentage test results by state")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/us_test_results.png "US test results")
 
-Test results by state
+Test results by state, ordered by decreasing numbers of tests
 
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/NY_test_results.png "NY test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/WA_test_results.png "WA test results")
