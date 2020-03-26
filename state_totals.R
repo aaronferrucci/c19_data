@@ -67,6 +67,14 @@ plot_a_state <- function(states, statename) {
   return(p)
 }
 
+# print_for_readme(states_info$state)
+print_for_readme <- function(statenames) {
+  dir <- "https://github.com/aaronferrucci/c19_data/blob/master/images/"
+  for (statename in statenames) {
+    print(noquote(paste0('![alt text](', dir, statename, '_test_results.png "', statename, ' test results")')))
+  }
+}
+
 # get the latest data
 source_data <- read.csv("https://covidtracking.com/api/states/daily.csv", stringsAsFactors=F)
 # trim away some data (keep date, positive, negative)
@@ -92,8 +100,3 @@ states_info <- states_info[order(-states_info$total),]
 for (statename in states_info$state) {
   plot_a_state(states, statename)
 }
-# ps <- list()
-# for (i in 1:4) {
-#   ps[[i]] <- state_plot(states, states_info$state[i])
-# }
-# grid.arrange(ps[[1]], ps[[2]], ps[[3]], ps[[4]], ncol=1)
