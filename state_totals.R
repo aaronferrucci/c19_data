@@ -61,7 +61,7 @@ plot_a_state <- function(states, statename) {
   p <- state_plot(states, statename)
   print(p)
 
-  png(filename=paste0(statename, "_test_results.png"), width=1264, height=673)
+  png(filename=paste0("images/", statename, "_test_results.png"), width=1264, height=673)
   print(p)
   dev.off()
   return(p)

@@ -42,7 +42,7 @@ p2 <- p1 +
     legend.background=element_rect(fill="transparent"),
     legend.box.background=element_rect(fill="transparent", color=NA),
     legend.key=element_rect(fill="transparent"))
-png(filename="us_test_results.png", width=1264, height=673)
+png(filename="images/us_test_results.png", width=1264, height=673)
 print(p2)
 dev.off()
 print(p2)

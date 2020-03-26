@@ -16,7 +16,7 @@ p <- ggplot(states, aes(x=state, y=rate)) +
   xlab("state/territory") + 
   geom_bar(stat="identity") +
   theme(axis.text.x=element_text(angle=90, vjust=0.5))
-png(filename="rate.png", width=1264, height=673)
+png(filename="images/rate.png", width=1264, height=673)
 print(p)
 dev.off()
 print(p)
@@ -36,7 +36,7 @@ p2 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
   ylab("total tested") +
   geom_bar(position="stack", stat="identity") +
   theme(axis.text.x=element_text(angle=90, vjust=0.5))
-png(filename="plot2.png", width=1264, height=673)
+png(filename="images/plot2.png", width=1264, height=673)
 print(p2)
 dev.off()
 print(p2)
@@ -48,7 +48,7 @@ p3 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
   ylab("total tested") +
   geom_bar(position="fill", stat="identity") +
   theme(axis.text.x=element_text(angle=90, vjust=0.5))
-png(filename="plot3.png", width=1264, height=673)
+png(filename="images/plot3.png", width=1264, height=673)
 print(p3)
 dev.off()
 print(p3)
