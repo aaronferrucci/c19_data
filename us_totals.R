@@ -45,4 +45,3 @@ p2 <- p1 +
 png(filename="images/us_test_results.png", width=1264, height=673)
 print(p2)
 dev.off()
-print(p2)

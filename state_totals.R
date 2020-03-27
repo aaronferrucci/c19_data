@@ -35,12 +35,12 @@ plotit <- function(us, title) {
   
   # against all good sense, use a 2nd y axis for positive test rate
   # calculate a scale factor for the 2nd y axis
-  yscale <- max(rate$total) / max(rate$rate) / 2
+  yscale <- max(rate$total)
   
   p2 <- p1 +
-    geom_line(data=rate, mapping=aes(x=date, y=rate*yscale, group=1, color="test-positive rate")) +
-    geom_point(data=rate, mapping=aes(x=date, y=rate*yscale, group=1, color="test-positive rate")) +
-    scale_y_continuous(sec.axis=sec_axis(~./yscale, name="test-positive rate")) +
+    geom_line(data=rate, mapping=aes(x=date, y=rate*yscale, group=1, color="test-positive rate (%)")) +
+    geom_point(data=rate, mapping=aes(x=date, y=rate*yscale, group=1, color="test-positive rate (%)")) +
+    scale_y_continuous(sec.axis=sec_axis(~./(yscale/100), name="test-positive rate (%)")) +
     scale_color_manual(NULL, values="black") +
     theme(
       legend.spacing=unit(-7, "lines"),
@@ -59,7 +59,6 @@ state_plot <- function(states, statename) {
 
 plot_a_state <- function(states, statename) {
   p <- state_plot(states, statename)
-  print(p)
 
   png(filename=paste0("images/", statename, "_test_results.png"), width=1264, height=673)
   print(p)

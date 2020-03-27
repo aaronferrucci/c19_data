@@ -19,7 +19,6 @@ p <- ggplot(states, aes(x=state, y=rate)) +
 png(filename="images/rate.png", width=1264, height=673)
 print(p)
 dev.off()
-print(p)
 
 # order matters: it sets the ordering of the 'result' factor, which in turn affects the plot coloring.
 # positive first, so it ends up reddish.
@@ -39,7 +38,6 @@ p2 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
 png(filename="images/plot2.png", width=1264, height=673)
 print(p2)
 dev.off()
-print(p2)
 
 # percentage stacked barplot
 p3 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
@@ -51,4 +49,3 @@ p3 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
 png(filename="images/plot3.png", width=1264, height=673)
 print(p3)
 dev.off()
-print(p3)
