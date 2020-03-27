@@ -1,7 +1,10 @@
-plotit <- function(us, title) {
+# common routine for plotting test results and positive test rate.
+# dependent libraries aren't loaded - the expectation is that this
+# file is sourced by client code, after library imports.
+plotit <- function(data, title) {
   # separate dataframe for test rate, for graph text
-  pos <- us[us$result == "positive", "count"]
-  neg <- us[us$result == "negative", "count"]
+  pos <- data[data$result == "positive", "count"]
+  neg <- data[data$result == "negative", "count"]
   # if the earliest day is NA, set it to 0 (cleans it up for the loop below)
   neg[length(neg)] <- ifelse(is.na(neg[length(neg)]), 0, neg[length(neg)])
 
@@ -11,16 +14,16 @@ plotit <- function(us, title) {
       neg[i] <- neg[i + 1]
   }
   # assign the "fixed" data back
-  us[us$result == "negative", "count"] <- neg
+  data[data$result == "negative", "count"] <- neg
   
-  rate <- data.frame(date=us[us$result=="positive",]$date, rate=pos / (pos + neg), total = pos + neg)
+  rate <- data.frame(date=data[data$result=="positive",]$date, rate=pos / (pos + neg), total = pos + neg)
   # yeah, might be some 0/0 here, clean it up
   rate$rate <- ifelse(is.na(rate$rate), 0, rate$rate)
 
   p1 <- ggplot() +
-    ggtitle(sprintf("%s, %s to %s", title, min(us$date), max(us$date))) +
+    ggtitle(sprintf("%s, %s to %s", title, min(data$date), max(data$date))) +
     ylab("total tested") +
-    geom_bar(data=us, mapping=aes(x=date, y=count, fill=result), position="stack", stat="identity") +
+    geom_bar(data=data, mapping=aes(x=date, y=count, fill=result), position="stack", stat="identity") +
     theme(axis.text.x=element_text(angle=90, vjust=0.5)) +
     scale_x_date(date_breaks="1 days", date_labels="%b %d") +
     theme(legend.position=c(.15, .75))
