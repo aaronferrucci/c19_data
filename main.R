@@ -3,7 +3,9 @@ library(lubridate)
 
 # get the latest data
 states <- read.csv("https://covidtracking.com/api/states.csv", stringsAsFactors=F)
-states[is.na(states$negative),]$negative <- 0
+if (any(is.na(states$negative))) {
+  states[is.na(states$negative),]$negative <- 0
+}
 states$total <- states$positive + states$negative
 states$date <- as.Date(states$checkTimeEt, tz="EST", format="%m/%d")
 states$rate <- states$positive / states$total
