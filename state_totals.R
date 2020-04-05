@@ -23,11 +23,15 @@ plot_a_state <- function(states, statename) {
 }
 
 # print_for_readme(states_info$state)
-print_for_readme <- function(statenames) {
+print_for_readme <- function(md, statenames) {
+  fc <- file(md)
   dir <- "https://github.com/aaronferrucci/c19_data/blob/master/images/"
+  text <- c(character(0))
   for (statename in statenames) {
-    print(noquote(paste0('![alt text](', dir, statename, '_test_results.png "', statename, ' test results")')))
+    text <- append(text, noquote(paste0('![alt text](', dir, statename, '_test_results.png "', statename, ' test results")')))
   }
+  writeLines(text, fc)
+  close(fc)
 }
 
 # get the latest data
@@ -51,6 +55,9 @@ states_info <- data.frame(
 states_info <- states_info[!is.na(states_info$total),]
 # sort by total
 states_info <- states_info[order(-states_info$total),]
+
+# as a side effect, write out the per-state links - to be merged into the readme
+print_for_readme("per_state_links.md", states_info$state)
 
 for (statename in states_info$state) {
   plot_a_state(states, statename)
