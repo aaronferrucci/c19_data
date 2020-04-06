@@ -14,3 +14,4 @@ readme:
 
 git-stuff:
 	git add images/*.png README.md
+	git push origin master
