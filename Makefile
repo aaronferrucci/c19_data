@@ -12,6 +12,8 @@ readme:
 	[ -f per_state_links.md ]
 	cat README.md.stub per_state_links.md > README.md
 
+NOW=$(shell date +%m/%d/%Y)
 git-stuff:
 	git add images/*.png README.md
+	git commit -m "$(NOW) autoupdate. Beep boop."
 	git push origin master
