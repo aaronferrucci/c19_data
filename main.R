@@ -1,6 +1,8 @@
 library(ggplot2)
 library(lubridate)
 
+source("fontsize.R")
+
 # get the latest data
 states <- read.csv("https://covidtracking.com/api/states.csv", stringsAsFactors=F)
 if (any(is.na(states$negative))) {
@@ -17,8 +19,12 @@ p <- ggplot(states, aes(x=state, y=rate)) +
   ggtitle(sprintf("testing rate [p/(n+p)], ~%s", states$date[1])) +
   xlab("state/territory") + 
   geom_bar(stat="identity") +
-  theme(axis.text.x=element_text(angle=90, vjust=0.5))
-png(filename="images/rate.png", width=1264, height=673)
+  theme(
+    axis.text.x=element_text(angle=90, vjust=0.5),
+    text = element_text(size=fontsize)
+  )
+# pointsize seems to have no effect
+png(filename="images/rate.png", width=1264, height=673, pointsize=100)
 print(p)
 dev.off()
 
@@ -36,8 +42,11 @@ p2 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
   xlab("state/territory") +
   ylab("total tested") +
   geom_bar(position="stack", stat="identity") +
-  theme(axis.text.x=element_text(angle=90, vjust=0.5))
-png(filename="images/plot2.png", width=1264, height=673)
+  theme(
+    axis.text.x=element_text(angle=90, vjust=0.5),
+    text = element_text(size=fontsize)
+  )
+png(filename="images/plot2.png", width=1264, height=673, pointsize=14)
 print(p2)
 dev.off()
 
@@ -47,7 +56,10 @@ p3 <- ggplot(states_posneg, aes(x=state, y=value, fill=result)) +
   xlab("state/territory") + 
   ylab("total tested") +
   geom_bar(position="fill", stat="identity") +
-  theme(axis.text.x=element_text(angle=90, vjust=0.5))
+  theme(
+    axis.text.x=element_text(angle=90, vjust=0.5),
+    text = element_text(size=fontsize)
+  )
 png(filename="images/plot3.png", width=1264, height=673)
 print(p3)
 dev.off()

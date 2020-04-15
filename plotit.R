@@ -1,6 +1,7 @@
 # common routine for plotting test results and positive test rate.
 # dependent libraries aren't loaded - the expectation is that this
 # file is sourced by client code, after library imports.
+source("fontsize.R")
 plotit <- function(data, title) {
   # separate dataframe for test rate, for graph text
   pos <- data[data$result == "positive", "count"]
@@ -26,7 +27,7 @@ plotit <- function(data, title) {
     geom_bar(data=data, mapping=aes(x=date, y=count, fill=result), position="stack", stat="identity") +
     theme(axis.text.x=element_text(angle=90, vjust=0.5)) +
     scale_x_date(date_breaks="1 days", date_labels="%b %d") +
-    theme(legend.position=c(.15, .75))
+    theme(legend.position=c(.15, .75), text = element_text(size=fontsize))
   
   # against all good sense, use a 2nd y axis for positive test rate
   # calculate a scale factor for the 2nd y axis
@@ -41,8 +42,8 @@ plotit <- function(data, title) {
       legend.spacing=unit(-7, "lines"),
       legend.background=element_rect(fill="transparent"),
       legend.box.background=element_rect(fill="transparent", color=NA),
-      legend.key=element_rect(fill="transparent"))
-
+      legend.key=element_rect(fill="transparent"),
+      text = element_text(size=fontsize))
   return(p2)
 }
 
