@@ -1,5 +1,6 @@
 library(lubridate)
 library(ggplot2)
+library(dplyr)
 
 source("plotit.R")
 county_plot <- function(counties, countyname) {
@@ -19,8 +20,8 @@ plot_a_county <- function(counties, countyname) {
 
 raw <- read.csv("covid_test_data.csv")
 
-raw$Santa.Clara..Tests <- ifelse(is.na(raw$Santa.Clara..Tests), 0, raw$Santa.Clara..Tests)
-raw$Santa.Clara..Tests.1 <- ifelse(is.na(raw$Santa.Clara..Tests.1), 0, raw$Santa.Clara..Tests.1)
+# raw$Santa.Clara..Tests <- ifelse(is.na(raw$Santa.Clara..Tests), 0, raw$Santa.Clara..Tests)
+# raw$Santa.Clara..Tests.1 <- ifelse(is.na(raw$Santa.Clara..Tests.1), 0, raw$Santa.Clara..Tests.1)
 
 # some issues with the input data:
 # column names are R-unfriendly, e.g. "Santa Clara +Tests", "Santa Clara -Tests"
@@ -29,22 +30,41 @@ raw$Santa.Clara..Tests.1 <- ifelse(is.na(raw$Santa.Clara..Tests.1), 0, raw$Santa
 # messy: relying on the mangled column names, e.g.
 # "Santa Clara +Tests" became "Santa.Clara..Tests"
 # "Santa Clara -Tests" became "Santa.Clara..Tests.1"
-santa_clara_pos <- data.frame(
-  date=as.Date(raw[,1]),
-  county="Santa Clara",
+counties <- data.frame(
+  date=as.Date(character()),
+  county=character(),
+  result=character(),
+  count=integer(),
+  stringsAsFactors=F
+)
+county <- "Santa Clara"
+colprefix <- gsub(" ", ".", county, fixed=T)
+poscol <- paste0(colprefix, "..Tests")
+negcol <- paste0(colprefix, "..Tests.1")
+
+date <- as.Date(raw[,1])
+count <- pull(raw, poscol)
+count <- ifelse(is.na(count), 0, count)
+
+pos <- data.frame(
+  date=date,
+  county=county,
   result="positive",
-  count=raw$Santa.Clara..Tests
+  count=count
 )
-santa_clara_pos$count <- cumsum(santa_clara_pos$count)
+pos$count <- cumsum(pos$count)
 
-santa_clara_neg <- data.frame(
-  date=as.Date(raw[,1]),
-  county="Santa Clara",
+count <- pull(raw, negcol)
+count <- ifelse(is.na(count), 0, count)
+
+neg <- data.frame(
+  date=date,
+  county=county,
   result="negative",
-  count=raw$Santa.Clara..Tests.1
+  count=count
 )
-santa_clara_neg$count <- cumsum(santa_clara_neg$count)
+neg$count <- cumsum(neg$count)
 
-counties <- rbind(santa_clara_pos, santa_clara_neg)
+counties <- rbind(pos, neg)
 
-p <- plot_a_county(counties, "Santa Clara")
+p <- plot_a_county(counties, county)
