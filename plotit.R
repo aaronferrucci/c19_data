@@ -24,7 +24,7 @@ plotit <- function(data, title) {
   p1 <- ggplot() +
     ggtitle(sprintf("%s, %s to %s", title, min(data$date), max(data$date))) +
     ylab("total tested") +
-    geom_bar(data=data, mapping=aes(x=date, y=count, fill=result), position="stack", stat="identity") +
+    geom_bar(data=data, mapping=aes(x=date, y=count, fill=result), position=position_stack(reverse=T), stat="identity") +
     theme(axis.text.x=element_text(angle=90, vjust=0.5)) +
     scale_x_date(date_breaks="1 days", date_labels="%b %d") +
     theme(legend.position=c(.15, .75), text = element_text(size=fontsize))
