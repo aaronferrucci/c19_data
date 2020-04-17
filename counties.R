@@ -37,6 +37,7 @@ counties <- data.frame(
   count=integer(),
   stringsAsFactors=F
 )
+
 county <- "Santa Clara"
 colprefix <- gsub(" ", ".", county, fixed=T)
 poscol <- paste0(colprefix, "..Tests")
