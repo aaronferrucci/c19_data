@@ -1,50 +1,295 @@
-,Santa Clara +Tests,Santa Clara -Tests,San Mateo +Tests,San Mateo -Tests,San Francisco +Tests,San Francisco -Tests,San Francisco Tested,Marin Tested,Sonoma Tested,Napa Tested,Contra Costa Tested
-2020-02-28,,,1,3,,,,,,,
-2020-02-29,,,0,1,,,,,,,
-2020-03-01,,,0,1,,,,,,,11.0
-2020-03-02,,,0,1,0.0,3.0,3.0,,,,11.0
-2020-03-03,,,0,0,0.0,2.0,5.0,,,,12.0
-2020-03-04,,,4,3,0.0,3.0,8.0,,,,19.0
-2020-03-05,,,2,5,2.0,6.0,16.0,,,,21.0
-2020-03-06,,,1,9,5.0,13.0,34.0,,,,26.0
-2020-03-07,,,4,4,1.0,17.0,52.0,,,,26.0
-2020-03-08,,,5,2,6.0,15.0,73.0,,,,35.0
-2020-03-09,,,7,28,1.0,2.0,76.0,,,,39.0
-2020-03-10,,,5,22,1.0,25.0,102.0,,,,55.0
-2020-03-11,,,3,48,8.0,18.0,128.0,,,,74.0
-2020-03-12,,,14,56,6.0,45.0,179.0,,,,103.0
-2020-03-13,,,21,80,5.0,72.0,256.0,,,,149.0
-2020-03-14,,,19,46,1.0,39.0,296.0,,,,156.0
-2020-03-15,,,12,114,4.0,15.0,315.0,,,,180.0
-2020-03-16,,,17,175,12.0,98.0,425.0,,,,222.0
-2020-03-17,23.0,174.0,14,236,7.0,67.0,499.0,,,,307.0
-2020-03-18,21.0,263.0,24,155,11.0,68.0,578.0,,,,392.0
-2020-03-19,34.0,350.0,13,202,12.0,112.0,702.0,,,,469.0
-2020-03-20,52.0,311.0,29,210,13.0,77.0,792.0,,,,610.0
-2020-03-21,43.0,333.0,16,176,23.0,176.0,991.0,357.0,357.0,,863.0
-2020-03-22,50.0,392.0,24,242,26.0,181.0,1198.0,357.0,357.0,,1100.0
-2020-03-23,50.0,466.0,49,386,34.0,183.0,1415.0,430.0,430.0,95.0,1289.0
-2020-03-24,61.0,639.0,41,315,30.0,148.0,1593.0,527.0,527.0,116.0,1440.0
-2020-03-25,72.0,677.0,40,253,52.0,391.0,2036.0,527.0,527.0,117.0,1867.0
-2020-03-26,54.0,529.0,41,277,41.0,233.0,2310.0,627.0,627.0,116.0,2210.0
-2020-03-27,76.0,665.0,40,248,36.0,362.0,2708.0,681.0,681.0,116.0,2589.0
-2020-03-28,67.0,673.0,27,149,33.0,244.0,2985.0,681.0,681.0,240.0,2952.0
-2020-03-29,52.0,644.0,14,89,46.0,347.0,3378.0,681.0,681.0,260.0,3365.0
-2020-03-30,51.0,481.0,33,259,37.0,248.0,3663.0,681.0,681.0,260.0,3583.0
-2020-03-31,73.0,562.0,30,205,27.0,234.0,3924.0,716.0,716.0,322.0,3884.0
-2020-04-01,62.0,656.0,35,244,45.0,226.0,4195.0,774.0,774.0,391.0,4090.0
-2020-04-02,54.0,500.0,22,224,56.0,281.0,4532.0,774.0,774.0,409.0,4507.0
-2020-04-03,46.0,511.0,18,223,65.0,377.0,4974.0,1337.0,1337.0,409.0,4943.0
-2020-04-04,52.0,577.0,15,105,23.0,167.0,5164.0,1337.0,1337.0,486.0,2562.0
-2020-04-05,47.0,400.0,5,82,23.0,214.0,5401.0,1485.0,1485.0,486.0,5607.0
-2020-04-06,64.0,376.0,29,244,54.0,355.0,5810.0,1485.0,1485.0,486.0,5841.0
-2020-04-07,39.0,446.0,16,229,42.0,264.0,6116.0,1485.0,1485.0,486.0,6034.0
-2020-04-08,37.0,608.0,10,237,65.0,346.0,6527.0,1485.0,1485.0,627.0,6322.0
-2020-04-09,54.0,582.0,10,238,71.0,510.0,7108.0,1956.0,1956.0,662.0,6726.0
-2020-04-10,66.0,582.0,12,258,71.0,369.0,7548.0,1956.0,1956.0,703.0,6947.0
-2020-04-11,68.0,534.0,11,123,35.0,350.0,7933.0,1956.0,1956.0,703.0,7044.0
-2020-04-12,42.0,410.0,5,96,45.0,269.0,8247.0,2081.0,2081.0,715.0,7490.0
-2020-04-13,54.0,274.0,14,258,64.0,378.0,8689.0,2145.0,2145.0,726.0,7743.0
-2020-04-14,46.0,524.0,26,273,41.0,447.0,9177.0,2145.0,2145.0,731.0,7993.0
-2020-04-15,37.0,528.0,9,150,66.0,466.0,9709.0,,,,
-2020-04-16,36.0,556.0,4,63,60.0,445.0,10214.0,,,,
+,date,county,result,count
+0,2020-02-28,Santa Clara,positive,
+1,2020-02-29,Santa Clara,positive,
+2,2020-03-01,Santa Clara,positive,
+3,2020-03-02,Santa Clara,positive,
+4,2020-03-03,Santa Clara,positive,
+5,2020-03-04,Santa Clara,positive,
+6,2020-03-05,Santa Clara,positive,
+7,2020-03-06,Santa Clara,positive,
+8,2020-03-07,Santa Clara,positive,
+9,2020-03-08,Santa Clara,positive,
+10,2020-03-09,Santa Clara,positive,
+11,2020-03-10,Santa Clara,positive,
+12,2020-03-11,Santa Clara,positive,
+13,2020-03-12,Santa Clara,positive,
+14,2020-03-13,Santa Clara,positive,
+15,2020-03-14,Santa Clara,positive,
+16,2020-03-15,Santa Clara,positive,
+17,2020-03-16,Santa Clara,positive,
+18,2020-03-17,Santa Clara,positive,23
+19,2020-03-18,Santa Clara,positive,21
+20,2020-03-19,Santa Clara,positive,34
+21,2020-03-20,Santa Clara,positive,52
+22,2020-03-21,Santa Clara,positive,43
+23,2020-03-22,Santa Clara,positive,50
+24,2020-03-23,Santa Clara,positive,50
+25,2020-03-24,Santa Clara,positive,61
+26,2020-03-25,Santa Clara,positive,72
+27,2020-03-26,Santa Clara,positive,54
+28,2020-03-27,Santa Clara,positive,76
+29,2020-03-28,Santa Clara,positive,67
+30,2020-03-29,Santa Clara,positive,52
+31,2020-03-30,Santa Clara,positive,51
+32,2020-03-31,Santa Clara,positive,73
+33,2020-04-01,Santa Clara,positive,62
+34,2020-04-02,Santa Clara,positive,54
+35,2020-04-03,Santa Clara,positive,46
+36,2020-04-04,Santa Clara,positive,52
+37,2020-04-05,Santa Clara,positive,47
+38,2020-04-06,Santa Clara,positive,64
+39,2020-04-07,Santa Clara,positive,39
+40,2020-04-08,Santa Clara,positive,37
+41,2020-04-09,Santa Clara,positive,54
+42,2020-04-10,Santa Clara,positive,66
+43,2020-04-11,Santa Clara,positive,68
+44,2020-04-12,Santa Clara,positive,42
+45,2020-04-13,Santa Clara,positive,54
+46,2020-04-14,Santa Clara,positive,46
+47,2020-04-15,Santa Clara,positive,37
+48,2020-04-16,Santa Clara,positive,36
+49,2020-02-28,Santa Clara,negative,
+50,2020-02-29,Santa Clara,negative,
+51,2020-03-01,Santa Clara,negative,
+52,2020-03-02,Santa Clara,negative,
+53,2020-03-03,Santa Clara,negative,
+54,2020-03-04,Santa Clara,negative,
+55,2020-03-05,Santa Clara,negative,
+56,2020-03-06,Santa Clara,negative,
+57,2020-03-07,Santa Clara,negative,
+58,2020-03-08,Santa Clara,negative,
+59,2020-03-09,Santa Clara,negative,
+60,2020-03-10,Santa Clara,negative,
+61,2020-03-11,Santa Clara,negative,
+62,2020-03-12,Santa Clara,negative,
+63,2020-03-13,Santa Clara,negative,
+64,2020-03-14,Santa Clara,negative,
+65,2020-03-15,Santa Clara,negative,
+66,2020-03-16,Santa Clara,negative,
+67,2020-03-17,Santa Clara,negative,174
+68,2020-03-18,Santa Clara,negative,263
+69,2020-03-19,Santa Clara,negative,350
+70,2020-03-20,Santa Clara,negative,311
+71,2020-03-21,Santa Clara,negative,333
+72,2020-03-22,Santa Clara,negative,392
+73,2020-03-23,Santa Clara,negative,466
+74,2020-03-24,Santa Clara,negative,639
+75,2020-03-25,Santa Clara,negative,677
+76,2020-03-26,Santa Clara,negative,529
+77,2020-03-27,Santa Clara,negative,665
+78,2020-03-28,Santa Clara,negative,673
+79,2020-03-29,Santa Clara,negative,644
+80,2020-03-30,Santa Clara,negative,481
+81,2020-03-31,Santa Clara,negative,562
+82,2020-04-01,Santa Clara,negative,656
+83,2020-04-02,Santa Clara,negative,500
+84,2020-04-03,Santa Clara,negative,511
+85,2020-04-04,Santa Clara,negative,577
+86,2020-04-05,Santa Clara,negative,400
+87,2020-04-06,Santa Clara,negative,376
+88,2020-04-07,Santa Clara,negative,446
+89,2020-04-08,Santa Clara,negative,608
+90,2020-04-09,Santa Clara,negative,582
+91,2020-04-10,Santa Clara,negative,582
+92,2020-04-11,Santa Clara,negative,534
+93,2020-04-12,Santa Clara,negative,410
+94,2020-04-13,Santa Clara,negative,274
+95,2020-04-14,Santa Clara,negative,524
+96,2020-04-15,Santa Clara,negative,528
+97,2020-04-16,Santa Clara,negative,556
+98,2020-02-28,San Mateo,positive,1
+99,2020-02-29,San Mateo,positive,0
+100,2020-03-01,San Mateo,positive,0
+101,2020-03-02,San Mateo,positive,0
+102,2020-03-03,San Mateo,positive,0
+103,2020-03-04,San Mateo,positive,4
+104,2020-03-05,San Mateo,positive,2
+105,2020-03-06,San Mateo,positive,1
+106,2020-03-07,San Mateo,positive,4
+107,2020-03-08,San Mateo,positive,5
+108,2020-03-09,San Mateo,positive,7
+109,2020-03-10,San Mateo,positive,5
+110,2020-03-11,San Mateo,positive,3
+111,2020-03-12,San Mateo,positive,14
+112,2020-03-13,San Mateo,positive,21
+113,2020-03-14,San Mateo,positive,19
+114,2020-03-15,San Mateo,positive,12
+115,2020-03-16,San Mateo,positive,17
+116,2020-03-17,San Mateo,positive,14
+117,2020-03-18,San Mateo,positive,24
+118,2020-03-19,San Mateo,positive,13
+119,2020-03-20,San Mateo,positive,29
+120,2020-03-21,San Mateo,positive,16
+121,2020-03-22,San Mateo,positive,24
+122,2020-03-23,San Mateo,positive,49
+123,2020-03-24,San Mateo,positive,41
+124,2020-03-25,San Mateo,positive,40
+125,2020-03-26,San Mateo,positive,41
+126,2020-03-27,San Mateo,positive,40
+127,2020-03-28,San Mateo,positive,27
+128,2020-03-29,San Mateo,positive,14
+129,2020-03-30,San Mateo,positive,33
+130,2020-03-31,San Mateo,positive,30
+131,2020-04-01,San Mateo,positive,35
+132,2020-04-02,San Mateo,positive,22
+133,2020-04-03,San Mateo,positive,18
+134,2020-04-04,San Mateo,positive,15
+135,2020-04-05,San Mateo,positive,5
+136,2020-04-06,San Mateo,positive,29
+137,2020-04-07,San Mateo,positive,16
+138,2020-04-08,San Mateo,positive,10
+139,2020-04-09,San Mateo,positive,10
+140,2020-04-10,San Mateo,positive,12
+141,2020-04-11,San Mateo,positive,11
+142,2020-04-12,San Mateo,positive,5
+143,2020-04-13,San Mateo,positive,14
+144,2020-04-14,San Mateo,positive,26
+145,2020-04-15,San Mateo,positive,9
+146,2020-04-16,San Mateo,positive,4
+147,2020-02-28,San Mateo,negative,3
+148,2020-02-29,San Mateo,negative,1
+149,2020-03-01,San Mateo,negative,1
+150,2020-03-02,San Mateo,negative,1
+151,2020-03-03,San Mateo,negative,0
+152,2020-03-04,San Mateo,negative,3
+153,2020-03-05,San Mateo,negative,5
+154,2020-03-06,San Mateo,negative,9
+155,2020-03-07,San Mateo,negative,4
+156,2020-03-08,San Mateo,negative,2
+157,2020-03-09,San Mateo,negative,28
+158,2020-03-10,San Mateo,negative,22
+159,2020-03-11,San Mateo,negative,48
+160,2020-03-12,San Mateo,negative,56
+161,2020-03-13,San Mateo,negative,80
+162,2020-03-14,San Mateo,negative,46
+163,2020-03-15,San Mateo,negative,114
+164,2020-03-16,San Mateo,negative,175
+165,2020-03-17,San Mateo,negative,236
+166,2020-03-18,San Mateo,negative,155
+167,2020-03-19,San Mateo,negative,202
+168,2020-03-20,San Mateo,negative,210
+169,2020-03-21,San Mateo,negative,176
+170,2020-03-22,San Mateo,negative,242
+171,2020-03-23,San Mateo,negative,386
+172,2020-03-24,San Mateo,negative,315
+173,2020-03-25,San Mateo,negative,253
+174,2020-03-26,San Mateo,negative,277
+175,2020-03-27,San Mateo,negative,248
+176,2020-03-28,San Mateo,negative,149
+177,2020-03-29,San Mateo,negative,89
+178,2020-03-30,San Mateo,negative,259
+179,2020-03-31,San Mateo,negative,205
+180,2020-04-01,San Mateo,negative,244
+181,2020-04-02,San Mateo,negative,224
+182,2020-04-03,San Mateo,negative,223
+183,2020-04-04,San Mateo,negative,105
+184,2020-04-05,San Mateo,negative,82
+185,2020-04-06,San Mateo,negative,244
+186,2020-04-07,San Mateo,negative,229
+187,2020-04-08,San Mateo,negative,237
+188,2020-04-09,San Mateo,negative,238
+189,2020-04-10,San Mateo,negative,258
+190,2020-04-11,San Mateo,negative,123
+191,2020-04-12,San Mateo,negative,96
+192,2020-04-13,San Mateo,negative,258
+193,2020-04-14,San Mateo,negative,273
+194,2020-04-15,San Mateo,negative,150
+195,2020-04-16,San Mateo,negative,63
+196,2020-02-28,San Francisco,positive,
+197,2020-02-29,San Francisco,positive,
+198,2020-03-01,San Francisco,positive,
+199,2020-03-02,San Francisco,positive,0
+200,2020-03-03,San Francisco,positive,0
+201,2020-03-04,San Francisco,positive,0
+202,2020-03-05,San Francisco,positive,2
+203,2020-03-06,San Francisco,positive,5
+204,2020-03-07,San Francisco,positive,1
+205,2020-03-08,San Francisco,positive,6
+206,2020-03-09,San Francisco,positive,1
+207,2020-03-10,San Francisco,positive,1
+208,2020-03-11,San Francisco,positive,8
+209,2020-03-12,San Francisco,positive,6
+210,2020-03-13,San Francisco,positive,5
+211,2020-03-14,San Francisco,positive,1
+212,2020-03-15,San Francisco,positive,4
+213,2020-03-16,San Francisco,positive,12
+214,2020-03-17,San Francisco,positive,7
+215,2020-03-18,San Francisco,positive,11
+216,2020-03-19,San Francisco,positive,12
+217,2020-03-20,San Francisco,positive,13
+218,2020-03-21,San Francisco,positive,23
+219,2020-03-22,San Francisco,positive,26
+220,2020-03-23,San Francisco,positive,34
+221,2020-03-24,San Francisco,positive,30
+222,2020-03-25,San Francisco,positive,52
+223,2020-03-26,San Francisco,positive,41
+224,2020-03-27,San Francisco,positive,36
+225,2020-03-28,San Francisco,positive,33
+226,2020-03-29,San Francisco,positive,46
+227,2020-03-30,San Francisco,positive,37
+228,2020-03-31,San Francisco,positive,27
+229,2020-04-01,San Francisco,positive,45
+230,2020-04-02,San Francisco,positive,56
+231,2020-04-03,San Francisco,positive,65
+232,2020-04-04,San Francisco,positive,23
+233,2020-04-05,San Francisco,positive,23
+234,2020-04-06,San Francisco,positive,54
+235,2020-04-07,San Francisco,positive,42
+236,2020-04-08,San Francisco,positive,65
+237,2020-04-09,San Francisco,positive,71
+238,2020-04-10,San Francisco,positive,71
+239,2020-04-11,San Francisco,positive,35
+240,2020-04-12,San Francisco,positive,45
+241,2020-04-13,San Francisco,positive,64
+242,2020-04-14,San Francisco,positive,41
+243,2020-04-15,San Francisco,positive,66
+244,2020-04-16,San Francisco,positive,60
+245,2020-02-28,San Francisco,negative,
+246,2020-02-29,San Francisco,negative,
+247,2020-03-01,San Francisco,negative,
+248,2020-03-02,San Francisco,negative,3
+249,2020-03-03,San Francisco,negative,2
+250,2020-03-04,San Francisco,negative,3
+251,2020-03-05,San Francisco,negative,6
+252,2020-03-06,San Francisco,negative,13
+253,2020-03-07,San Francisco,negative,17
+254,2020-03-08,San Francisco,negative,15
+255,2020-03-09,San Francisco,negative,2
+256,2020-03-10,San Francisco,negative,25
+257,2020-03-11,San Francisco,negative,18
+258,2020-03-12,San Francisco,negative,45
+259,2020-03-13,San Francisco,negative,72
+260,2020-03-14,San Francisco,negative,39
+261,2020-03-15,San Francisco,negative,15
+262,2020-03-16,San Francisco,negative,98
+263,2020-03-17,San Francisco,negative,67
+264,2020-03-18,San Francisco,negative,68
+265,2020-03-19,San Francisco,negative,112
+266,2020-03-20,San Francisco,negative,77
+267,2020-03-21,San Francisco,negative,176
+268,2020-03-22,San Francisco,negative,181
+269,2020-03-23,San Francisco,negative,183
+270,2020-03-24,San Francisco,negative,148
+271,2020-03-25,San Francisco,negative,391
+272,2020-03-26,San Francisco,negative,233
+273,2020-03-27,San Francisco,negative,362
+274,2020-03-28,San Francisco,negative,244
+275,2020-03-29,San Francisco,negative,347
+276,2020-03-30,San Francisco,negative,248
+277,2020-03-31,San Francisco,negative,234
+278,2020-04-01,San Francisco,negative,226
+279,2020-04-02,San Francisco,negative,281
+280,2020-04-03,San Francisco,negative,377
+281,2020-04-04,San Francisco,negative,167
+282,2020-04-05,San Francisco,negative,214
+283,2020-04-06,San Francisco,negative,355
+284,2020-04-07,San Francisco,negative,264
+285,2020-04-08,San Francisco,negative,346
+286,2020-04-09,San Francisco,negative,510
+287,2020-04-10,San Francisco,negative,369
+288,2020-04-11,San Francisco,negative,350
+289,2020-04-12,San Francisco,negative,269
+290,2020-04-13,San Francisco,negative,378
+291,2020-04-14,San Francisco,negative,447
+292,2020-04-15,San Francisco,negative,466
+293,2020-04-16,San Francisco,negative,445
