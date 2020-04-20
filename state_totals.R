@@ -45,10 +45,11 @@ names(states) <- c("date", "state", "result", "count")
 states$date <- ymd(states$date)
 
 state_names <- unique(states$state)
+maxdate <- max(states$date)
 states_info <- data.frame(
   state=state_names,
-  total=(states[states$date == today() & states$result == "positive", "count"] +
-           states[states$date == today() & states$result == "negative", "count"])
+  total=(states[states$date == maxdate & states$result == "positive", "count"] +
+           states[states$date == maxdate & states$result == "negative", "count"])
 )
 
 # drop any state with total=NA
