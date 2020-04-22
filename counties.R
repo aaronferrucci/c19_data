@@ -65,12 +65,17 @@ get_data <- function(county_names) {
   for (county_name in county_names) {
     county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
     
+    # only retain the columns we need - just a tidiness step
+    keepers <- c("date", "county", "result", "count")
+    county <- county[keepers]
+    
     if (is.null(raw)) {
       raw <- county
     } else {
       raw <- rbind(raw, county)
     }
   }
+
   # type conversions, factor ordering
   raw$date <- as.Date(raw$date)
   # order the result factor... this may depend on alpha order, or on the way the data is constructed.
@@ -82,7 +87,7 @@ get_data <- function(county_names) {
 }
 
 # these are the counties with enough data for plotting:
-county_names <- c("San Francisco", "San Mateo", "Santa Clara")
+county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara")
 
 # update_legacy_data(county_names)
 
