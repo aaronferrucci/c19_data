@@ -104,3 +104,9 @@ date,county,result,count,count (cumul.),Total Tests (cumul.)
 2020-04-19,Contra Costa,negative,349,9007,
 2020-04-20,Contra Costa,positive,12,749,9908
 2020-04-20,Contra Costa,negative,152,9159,
+2020-04-21,Contra Costa,positive,14,763,10064
+2020-04-21,Contra Costa,negative,142,9301,
+2020-04-22,Contra Costa,positive,7,770,10332
+2020-04-22,Contra Costa,negative,261,9562,
+2020-04-23,Contra Costa,positive,,,
+2020-04-23,Contra Costa,negative,,,

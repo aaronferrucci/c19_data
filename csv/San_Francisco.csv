@@ -2,12 +2,6 @@ https://data.sfgov.org/stories/s/fjki-2fab#covid-19-testing,,,
 ,,,
 ,,,
 date,county,result,count
-2020-02-28,San Francisco,positive,NA
-2020-02-28,San Francisco,negative,NA
-2020-02-29,San Francisco,positive,NA
-2020-02-29,San Francisco,negative,NA
-2020-03-01,San Francisco,positive,NA
-2020-03-01,San Francisco,negative,NA
 2020-03-02,San Francisco,positive,0
 2020-03-02,San Francisco,negative,3
 2020-03-03,San Francisco,positive,0
@@ -106,3 +100,11 @@ date,county,result,count
 2020-04-18,San Francisco,negative,175
 2020-04-19,San Francisco,positive,41
 2020-04-19,San Francisco,negative,336
+2020-04-20,San Francisco,positive,28
+2020-04-20,San Francisco,negative,388
+2020-04-21,San Francisco,positive,42
+2020-04-21,San Francisco,negative,467
+2020-04-22,San Francisco,positive,63
+2020-04-22,San Francisco,negative,212
+2020-04-23,San Francisco,positive,
+2020-04-23,San Francisco,negative,

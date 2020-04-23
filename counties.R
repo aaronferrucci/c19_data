@@ -89,7 +89,7 @@ get_data <- function(county_names) {
 # Counties with data
 county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara", "Santa Cruz")
 # counties to plot
-plot_county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara")
+plot_county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara", "Santa Cruz")
 
 # update_legacy_data(county_names)
 
