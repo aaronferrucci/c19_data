@@ -86,20 +86,25 @@ get_data <- function(county_names) {
   return(raw)
 }
 
-# these are the counties with enough data for plotting:
-county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara")
+# Counties with data
+county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara", "Santa Cruz")
+# counties to plot
+plot_county_names <- c("Contra Costa", "San Francisco", "San Mateo", "Santa Clara")
 
 # update_legacy_data(county_names)
 
 # reconstruct the "raw" data from per-county csv files
 raw <- get_data(county_names)
 
+# save the raw data as an intermediate checkpoint
+write.table(raw, "csv/raw.csv", sep=",", row.names=F)
+
 counties <- tweak_data(raw, cumulative=T)
-for (county_name in county_names) {
+for (county_name in plot_county_names) {
   p <- plot_a_county(counties, county_name, "cumulative")
 }
 
 counties <- tweak_data(raw, cumulative=F)
-for (county_name in county_names) {
+for (county_name in plot_county_names) {
   p <- plot_a_county(counties, county_name, "daily")
 }

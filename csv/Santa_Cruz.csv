@@ -1,0 +1,38 @@
+https://www.santacruzhealth.org/HSAHome/HSADivisions/PublicHealth/CommunicableDiseaseControl/CoronavirusHome.aspx,,,,,
+"NOTE: Santa Cruz reports cumulative positive and negative tests each day (entered in the bold-text columns). Historical data is not retained, so we have to capture data every day.",,,,,
+METHOD: calculate per-day counts by subtracting each day's results from the previous day,,,,,
+date,county,result,count,known cases (cumul.),negative test results (cumul.)
+2020-04-01,Santa Cruz,positive,59,59,794
+2020-04-01,Santa Cruz,negative,794,,
+2020-04-04,Santa Cruz,positive,3,62,794
+2020-04-04,Santa Cruz,negative,0,,
+2020-04-05,Santa Cruz,positive,7,69,794
+2020-04-05,Santa Cruz,negative,0,,
+2020-04-06,Santa Cruz,positive,2,71,794
+2020-04-06,Santa Cruz,negative,0,,
+2020-04-07,Santa Cruz,positive,5,76,794
+2020-04-07,Santa Cruz,negative,0,,
+2020-04-08,Santa Cruz,positive,4,80,1673
+2020-04-08,Santa Cruz,negative,879,,
+2020-04-11,Santa Cruz,positive,8,88,2288
+2020-04-11,Santa Cruz,negative,615,,
+2020-04-12,Santa Cruz,positive,3,91,2340
+2020-04-12,Santa Cruz,negative,52,,
+2020-04-15,Santa Cruz,positive,5,96,2460
+2020-04-15,Santa Cruz,negative,120,,
+2020-04-16,Santa Cruz,positive,0,96,2514
+2020-04-16,Santa Cruz,negative,54,,
+2020-04-17,Santa Cruz,positive,2,98,2560
+2020-04-17,Santa Cruz,negative,46,,
+2020-04-18,Santa Cruz,positive,3,101,2622
+2020-04-18,Santa Cruz,negative,62,,
+2020-04-19,Santa Cruz,positive,3,104,2672
+2020-04-19,Santa Cruz,negative,50,,
+2020-04-20,Santa Cruz,positive,2,106,2767
+2020-04-20,Santa Cruz,negative,95,,
+2020-04-21,Santa Cruz,positive,2,108,2848
+2020-04-21,Santa Cruz,negative,81,,
+2020-04-22,Santa Cruz,positive,3,111,2867
+2020-04-22,Santa Cruz,negative,19,,
+2020-04-23,Santa Cruz,positive,3,114,2953
+2020-04-23,Santa Cruz,negative,86,,
