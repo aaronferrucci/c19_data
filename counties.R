@@ -60,10 +60,28 @@ update_legacy_data <- function(county_names) {
   }
 }
 
+read_county <- function(county_name) {
+  county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+
+  # some county csvs have additional columns (say, cumulative counts)
+  # only retain the columns we need, to allow merging
+  keepers <- c("date", "county", "result", "count")
+  county <- county[keepers]
+
+  county$date <- as.Date(county$date)
+
+  # order the result factor... this may depend on alpha order, or on the way the data is constructed.
+  # "positive" should be first in the level order to produce stacked barplots with positive at the bottom.
+  if (levels(county$result)[1] == "negative") {
+    county$result <- factor(county$result, levels(county$result)[c(2:1)])
+  }
+  return(county)
+}
+
 get_data <- function(county_names) {
   raw = NULL
   for (county_name in county_names) {
-    county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+    county <- read_county(county_name)
     
     # only retain the columns we need - just a tidiness step
     keepers <- c("date", "county", "result", "count")
@@ -76,13 +94,6 @@ get_data <- function(county_names) {
     }
   }
 
-  # type conversions, factor ordering
-  raw$date <- as.Date(raw$date)
-  # order the result factor... this may depend on alpha order, or on the way the data is constructed.
-  # "positive" should be first in the level order to produce stacked barplots with positive at the bottom.
-  if (levels(raw$result)[1] == "negative") {
-    raw$result <- factor(raw$result, levels(raw$result)[c(2:1)])
-  }
   return(raw)
 }
 
