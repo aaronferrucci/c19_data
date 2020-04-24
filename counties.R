@@ -60,6 +60,23 @@ update_legacy_data <- function(county_names) {
   }
 }
 
+# "santa cruz smooth" is in a non-stacked format - that made interpolation easier, but it's non-standard.
+# read and convert it here.
+read_smooth <- function(county_name) {
+  library(reshape2)
+  county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+
+  keepers <- c("date", "county", "positive", "negative")
+  county <- county[keepers]
+  county$date <- as.Date(county$date)
+  county <- melt(county, id.vars=c("date", "county"))
+  names(county) <- c("date", "county", "result", "count")
+  if (levels(county$result)[1] == "negative") {
+    county$result <- factor(county$result, levels(county$result)[c(2:1)])
+  }
+  return(county)
+}
+
 read_county <- function(county_name) {
   county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
 
@@ -69,6 +86,14 @@ read_county <- function(county_name) {
   county <- county[keepers]
 
   county$date <- as.Date(county$date)
+
+  # Sometimes the data comes with NA in the max dates. Trim that off.
+  # Seems arbitrary to just trim up to exactly twice, but let's try it for now.
+  for (i in 1:2) {
+    if (all(is.na(county[county$date == max(county$date), "count"]))) {
+      county <- county[county$date < max(county$date),]
+    }
+  }
 
   # order the result factor... this may depend on alpha order, or on the way the data is constructed.
   # "positive" should be first in the level order to produce stacked barplots with positive at the bottom.
@@ -119,3 +144,11 @@ counties <- tweak_data(raw, cumulative=F)
 for (county_name in plot_county_names) {
   p <- plot_a_county(counties, county_name, "daily")
 }
+
+county_name <- "Santa Cruz Smooth"
+sc <- read_smooth(county_name)
+smooth <- tweak_data(sc, cumulative=T)
+plot_a_county(smooth, county_name, "cumulative")
+
+smooth <- tweak_data(sc, cumulative=F)
+plot_a_county(smooth, county_name, "daily")
