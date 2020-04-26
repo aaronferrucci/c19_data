@@ -3,14 +3,19 @@ library(ggplot2)
 library(dplyr)
 
 source("plotit.R")
-county_plot <- function(counties, countyname, type) {
+county_plot <- function(counties, countyname, type, posneg) {
   county <- counties[counties$county %in% countyname,]
-  p <- plotit(county, paste0(countyname, " ", type, " results"))
+  title <- paste0(countyname, " ", type, " results")
+  if (posneg) {
+    p <- plotit(county, title)
+  } else {
+    p <- plot_p(county, title)
+  }
   return(p)  
 }
 
-plot_a_county <- function(counties, countyname, type) {
-  p <- county_plot(counties, countyname, type)
+plot_a_county <- function(counties, countyname, type, posneg=T) {
+  p <- county_plot(counties, countyname, type, posneg)
   filename <- paste0("images/", gsub(" ", "_", countyname, fixed=T), "_", type, "_test_results.png")
   png(filename=filename, width=1264, height=673)
   print(p)
@@ -34,8 +39,18 @@ tweak_data <- function(raw, cumulative=T) {
   return(counties)  
 }
 
+space_to_underscore <- function(str) {
+  underscored <- gsub(" ", "_", str)
+  return(underscored)
+}
+
+googledocs_sheetname <- function(county_name) {
+  sheetname <- space_to_underscore(county_name)
+  return(sheetname)
+}
+
 csv_filename <- function(county_name) {
-  filename <- paste0("csv/", gsub(" ", "_", county_name), ".csv")
+  filename <- paste0("csv/", space_to_underscore(county_name), ".csv")
   return(filename)  
 }
 
@@ -74,6 +89,12 @@ read_smooth <- function(county_name) {
   if (levels(county$result)[1] == "negative") {
     county$result <- factor(county$result, levels(county$result)[c(2:1)])
   }
+  return(county)
+}
+
+read_p_county <- function(county_name) {
+  county <- read_county(county_name)
+  county <- county[county$result == "positive",]
   return(county)
 }
 
@@ -145,6 +166,7 @@ for (county_name in plot_county_names) {
   p <- plot_a_county(counties, county_name, "daily")
 }
 
+# special case: "smoothed" santa cruz datacounty
 county_name <- "Santa Cruz Smooth"
 sc <- read_smooth(county_name)
 smooth <- tweak_data(sc, cumulative=T)
@@ -152,3 +174,12 @@ plot_a_county(smooth, county_name, "cumulative")
 
 smooth <- tweak_data(sc, cumulative=F)
 plot_a_county(smooth, county_name, "daily")
+
+# positive-only data - maybe interesting?
+if (F) {
+  raw <- read_p_county("Solano")
+  counties <- tweak_data(raw, cumulative=T)
+  plot_a_county(counties, "Solano", "cumulative", F)
+  counties <- tweak_data(raw, cumulative=F)
+  plot_a_county(counties, "Solano", "daily", F)
+}

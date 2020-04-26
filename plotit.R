@@ -47,4 +47,14 @@ plotit <- function(data, title) {
   return(p2)
 }
 
+plot_p <- function(data, title) {
+  p1 <- ggplot() +
+    ggtitle(sprintf("%s, %s to %s", title, min(data$date), max(data$date))) +
+    ylab("confirmed cases") +
+    geom_bar(data=data, mapping=aes(x=date, y=count, fill=result), position=position_stack(reverse=T), stat="identity") +
+    theme(axis.text.x=element_text(angle=90, vjust=0.5), legend.position="none") +
+    scale_x_date(date_breaks="1 days", date_labels="%b %d") +
+    theme(text = element_text(size=fontsize))
+  return(p1)
+}
 
