@@ -3,6 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 source("plotit.R")
+source("googledocs_utils.R")
 county_plot <- function(counties, countyname, type, posneg) {
   county <- counties[counties$county %in% countyname,]
   title <- paste0(countyname, " ", type, " results")
@@ -44,10 +45,6 @@ space_to_underscore <- function(str) {
   return(underscored)
 }
 
-googledocs_sheetname <- function(county_name) {
-  sheetname <- space_to_underscore(county_name)
-  return(sheetname)
-}
 
 csv_filename <- function(county_name) {
   filename <- paste0("csv/", space_to_underscore(county_name), ".csv")
@@ -98,8 +95,14 @@ read_p_county <- function(county_name) {
   return(county)
 }
 
-read_county <- function(county_name) {
-  county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+read_county <- function(county_name, csv=T) {
+  if (csv) {
+    county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+  } else {
+    county <- read_googledocs_county(county_name)
+    county$county <- as.factor(county$county)
+    county$result <- as.factor(county$result)
+  }
 
   # some county csvs have additional columns (say, cumulative counts)
   # only retain the columns we need, to allow merging
