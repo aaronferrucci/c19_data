@@ -4,9 +4,9 @@ library(dplyr)
 
 source("plotit.R")
 source("googledocs_utils.R")
-county_plot <- function(counties, countyname, type, posneg) {
-  county <- counties[counties$county %in% countyname,]
-  title <- paste0(countyname, " ", type, " results")
+county_plot <- function(counties, county_name, type, posneg) {
+  county <- counties[counties$county %in% county_name,]
+  title <- paste0(county_name, " ", type, " results")
   if (posneg) {
     p <- plotit(county, title)
   } else {
@@ -15,9 +15,9 @@ county_plot <- function(counties, countyname, type, posneg) {
   return(p)  
 }
 
-plot_a_county <- function(counties, countyname, type, posneg=T) {
-  p <- county_plot(counties, countyname, type, posneg)
-  filename <- paste0("images/", gsub(" ", "_", countyname, fixed=T), "_", type, "_test_results.png")
+plot_a_county <- function(counties, county_name, type, posneg=T) {
+  p <- county_plot(counties, county_name, type, posneg)
+  filename <- paste0("images/", gsub(" ", "_", county_name, fixed=T), "_", type, "_test_results.png")
   png(filename=filename, width=1264, height=673)
   print(p)
   dev.off()
@@ -100,6 +100,8 @@ read_county <- function(county_name, csv=T) {
     county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
   } else {
     county <- read_googledocs_county(county_name)
+    # county is a "tibble", convert to data.frame
+    county <- as.data.frame(county)
     county$county <- as.factor(county$county)
     county$result <- as.factor(county$result)
   }
@@ -130,7 +132,7 @@ read_county <- function(county_name, csv=T) {
 get_data <- function(county_names) {
   raw = NULL
   for (county_name in county_names) {
-    county <- read_county(county_name)
+    county <- read_county(county_name, F)
     
     # only retain the columns we need - just a tidiness step
     keepers <- c("date", "county", "result", "count")
