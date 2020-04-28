@@ -17,3 +17,8 @@ Cumulative test results by county:
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/San_Mateo_cumulative_test_results.png "San Mateo cumulative test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Clara_cumulative_test_results.png "Santa Clara cumulative test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_cumulative_test_results.png "Santa Cruz cumulative test results")
+
+Experimental section:
+Smoothed Santa Cruz plots:
+![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_Smooth_daily_test_results.png "Santa Cruz smoothed daily test results")
+![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_Smooth_cumulative_test_results.png "Santa Cruz smoothed cumulative test results")
