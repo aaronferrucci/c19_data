@@ -19,6 +19,11 @@ Cumulative test results by county:
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_cumulative_test_results.png "Santa Cruz cumulative test results")
 
 Experimental section:
+
 Smoothed Santa Cruz plots:
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_Smooth_daily_test_results.png "Santa Cruz smoothed daily test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Santa_Cruz_Smooth_cumulative_test_results.png "Santa Cruz smoothed cumulative test results")
+
+Positive-only results:
+![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Solano_daily_test_results.png "Solano daily test results")
+![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Solano_cumulative_test_results.png "Solano cumulative test results")

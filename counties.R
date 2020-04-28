@@ -89,8 +89,8 @@ read_smooth <- function(county_name) {
   return(county)
 }
 
-read_p_county <- function(county_name) {
-  county <- read_county(county_name)
+read_p_county <- function(county_name, csv=F) {
+  county <- read_county(county_name, csv)
   county <- county[county$result == "positive",]
   return(county)
 }
@@ -184,7 +184,7 @@ plot_a_county(smooth, county_name, "daily")
 if (F) {
   raw <- read_p_county("Solano")
   counties <- tweak_data(raw, cumulative=T)
-  plot_a_county(counties, "Solano", "cumulative", F)
+  p <- plot_a_county(counties, "Solano", "cumulative", F)
   counties <- tweak_data(raw, cumulative=F)
-  plot_a_county(counties, "Solano", "daily", F)
+  p <- plot_a_county(counties, "Solano", "daily", F)
 }
