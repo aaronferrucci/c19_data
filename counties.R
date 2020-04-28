@@ -74,9 +74,16 @@ update_legacy_data <- function(county_names) {
 
 # "santa cruz smooth" is in a non-stacked format - that made interpolation easier, but it's non-standard.
 # read and convert it here.
-read_smooth <- function(county_name) {
+read_smooth <- function(county_name, csv=F) {
   library(reshape2)
-  county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+  if (csv) {
+    county <- read.table(csv_filename(county_name), header=T, sep=",", skip=3)
+  } else {
+    county <- read_googledocs_county(county_name)
+    # county is a "tibble", convert to data.frame
+    county <- as.data.frame(county)
+    county$county <- as.factor(county$county)
+  }
 
   keepers <- c("date", "county", "positive", "negative")
   county <- county[keepers]
