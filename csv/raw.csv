@@ -111,8 +111,8 @@
 2020-04-24,"Contra Costa","negative",353
 2020-04-25,"Contra Costa","positive",12
 2020-04-25,"Contra Costa","negative",545
-2020-04-26,"Contra Costa","positive",3
-2020-04-26,"Contra Costa","negative",298
+2020-04-26,"Contra Costa","positive",4
+2020-04-26,"Contra Costa","negative",312
 2020-03-02,"San Francisco","positive",0
 2020-03-02,"San Francisco","negative",3
 2020-03-03,"San Francisco","positive",0
@@ -225,6 +225,8 @@
 2020-04-25,"San Francisco","negative",797
 2020-04-26,"San Francisco","positive",14
 2020-04-26,"San Francisco","negative",191
+2020-04-27,"San Francisco","positive",24
+2020-04-27,"San Francisco","negative",728
 2020-02-28,"San Mateo","positive",1
 2020-02-28,"San Mateo","negative",3
 2020-02-29,"San Mateo","positive",0
@@ -341,6 +343,8 @@
 2020-04-24,"San Mateo","negative",186
 2020-04-25,"San Mateo","positive",3
 2020-04-25,"San Mateo","negative",29
+2020-04-26,"San Mateo","positive",9
+2020-04-26,"San Mateo","negative",21
 2020-03-17,"Santa Clara","positive",23
 2020-03-17,"Santa Clara","negative",174
 2020-03-18,"Santa Clara","positive",21
@@ -423,6 +427,8 @@
 2020-04-25,"Santa Clara","negative",850
 2020-04-26,"Santa Clara","positive",5
 2020-04-26,"Santa Clara","negative",706
+2020-04-27,"Santa Clara","positive",0
+2020-04-27,"Santa Clara","negative",700
 2020-04-01,"Santa Cruz","positive",59
 2020-04-01,"Santa Cruz","negative",794
 2020-04-02,"Santa Cruz","positive",0
@@ -477,3 +483,5 @@
 2020-04-26,"Santa Cruz","negative",218
 2020-04-27,"Santa Cruz","positive",4
 2020-04-27,"Santa Cruz","negative",89
+2020-04-28,"Santa Cruz","positive",1
+2020-04-28,"Santa Cruz","negative",0
