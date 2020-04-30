@@ -35,7 +35,7 @@ print_for_readme <- function(md, statenames) {
 }
 
 # get the latest data
-source_data <- read.csv("https://covidtracking.com/api/states/daily.csv", stringsAsFactors=F)
+source_data <- read.csv("https://covidtracking.com/api/v1/states/daily.csv", stringsAsFactors=F)
 # trim away some data (keep date, positive, negative)
 keepers <- c("date", "state", "positive", "negative")
 states <- source_data[,(names(source_data) %in% keepers)]
