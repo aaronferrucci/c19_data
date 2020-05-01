@@ -14,3 +14,8 @@ read_googledocs_county <- function(county_name) {
   return(county)
 }
 
+# Does this help with Sonoma's NA entries?
+# read_googledocs_county <- function(county_name) {
+#   county <- read_sheet(googledocs_url, skip=3, na=c("", "NA"), sheet=googledocs_sheetname(county_name))
+#   return(county)
+# }
