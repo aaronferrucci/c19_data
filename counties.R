@@ -189,9 +189,13 @@ plot_a_county(smooth, county_name, "daily")
 
 # positive-only data - maybe interesting?
 if (T) {
-  raw <- read_p_county("Solano")
-  counties <- tweak_data(raw, cumulative=T)
-  p <- plot_a_county(counties, "Solano", "cumulative", F)
-  counties <- tweak_data(raw, cumulative=F)
-  p <- plot_a_county(counties, "Solano", "daily", F)
+  # p_counties <- c("Solano", "Sonoma")
+  p_counties <- c("Solano")
+  for (county_name in p_counties) {
+    raw <- read_p_county(county_name)
+    counties <- tweak_data(raw, cumulative=T)
+    p <- plot_a_county(counties, county_name, "cumulative", F)
+    counties <- tweak_data(raw, cumulative=F)
+    p <- plot_a_county(counties, county_name, "daily", F)
+  }
 }
