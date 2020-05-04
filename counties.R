@@ -98,6 +98,9 @@ read_smooth <- function(county_name, csv=F) {
 
 read_p_county <- function(county_name, csv=F) {
   county <- read_county(county_name, csv)
+  county$count <- as.numeric(as.character(county$count))
+  county$count <- ifelse(is.na(county$count), 0, county$count)
+
   county <- county[county$result == "positive",]
   return(county)
 }
@@ -189,8 +192,7 @@ plot_a_county(smooth, county_name, "daily")
 
 # positive-only data - maybe interesting?
 if (T) {
-  # p_counties <- c("Solano", "Sonoma")
-  p_counties <- c("Solano")
+  p_counties <- c("Solano", "Sonoma")
   for (county_name in p_counties) {
     raw <- read_p_county(county_name)
     counties <- tweak_data(raw, cumulative=T)
