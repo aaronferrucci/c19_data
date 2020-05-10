@@ -62,5 +62,6 @@ Test results by state, ordered by decreasing numbers of tests
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/WY_test_results.png "WY test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/GU_test_results.png "GU test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/MP_test_results.png "MP test results")
+![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/PR_test_results.png "PR test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/VI_test_results.png "VI test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/master/images/AS_test_results.png "AS test results")

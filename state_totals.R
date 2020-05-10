@@ -48,9 +48,15 @@ state_names <- unique(states$state)
 maxdate <- max(states$date)
 states_info <- data.frame(
   state=state_names,
-  total=(states[states$date == maxdate & states$result == "positive", "count"] +
-           states[states$date == maxdate & states$result == "negative", "count"])
+  positive=states[states$date == maxdate & states$result == "positive", "count"],
+  negative=states[states$date == maxdate & states$result == "negative", "count"]
 )
+
+# clean up any NAs
+states_info$positive <- ifelse(is.na(states_info$positive), 0, states_info$positive)
+states_info$negative <- ifelse(is.na(states_info$negative), 0, states_info$negative)
+# compute the total
+states_info$total <- states_info$positive + states_info$negative
 
 # drop any state with total=NA
 states_info <- states_info[!is.na(states_info$total),]
