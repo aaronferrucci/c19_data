@@ -1,7 +1,7 @@
 
 RSCRIPTS := main.R us_totals.R state_totals.R
 .PHONY: $(RSCRIPTS)
-default: $(RSCRIPTS) readme git-stuff
+default: $(RSCRIPTS) readme
 
 $(RSCRIPTS):
 	Rscript -e 'source("$@");'
