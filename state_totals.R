@@ -9,7 +9,7 @@ source("plotit.R")
 
 state_plot <- function(states, statename) {
   state <- states[states$state %in% statename,]
-  p <- plotit(state, paste0(statename, " results"))
+  p <- plotit(state, paste0(statename, " results"), T)
   return(p)  
 }
 
