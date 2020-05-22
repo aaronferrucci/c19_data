@@ -26,6 +26,7 @@ Smoothed Santa Cruz plots:
 
 Positive-only results:
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Monterey_daily_test_results.png "Monterey daily test results")
+![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Monterey_cumulative_test_results.png "Monterey cumulative test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Solano_daily_test_results.png "Solano daily test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Solano_cumulative_test_results.png "Solano cumulative test results")
 ![alt text](https://github.com/aaronferrucci/c19_data/blob/ca-counties/images/Sonoma_daily_test_results.png "Sonoma daily test results")
