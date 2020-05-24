@@ -145,6 +145,24 @@
 2020-05-11,"Contra Costa","negative",472
 2020-05-12,"Contra Costa","positive",14
 2020-05-12,"Contra Costa","negative",519
+2020-05-13,"Contra Costa","positive",7
+2020-05-13,"Contra Costa","negative",877
+2020-05-14,"Contra Costa","positive",12
+2020-05-14,"Contra Costa","negative",1134
+2020-05-15,"Contra Costa","positive",21
+2020-05-15,"Contra Costa","negative",719
+2020-05-16,"Contra Costa","positive",26
+2020-05-16,"Contra Costa","negative",177
+2020-05-17,"Contra Costa","positive",11
+2020-05-17,"Contra Costa","negative",170
+2020-05-18,"Contra Costa","positive",38
+2020-05-18,"Contra Costa","negative",751
+2020-05-19,"Contra Costa","positive",14
+2020-05-19,"Contra Costa","negative",1997
+2020-05-20,"Contra Costa","positive",24
+2020-05-20,"Contra Costa","negative",1119
+2020-05-21,"Contra Costa","positive",25
+2020-05-21,"Contra Costa","negative",989
 2020-03-02,"San Francisco","positive",0
 2020-03-02,"San Francisco","negative",3
 2020-03-03,"San Francisco","positive",0
@@ -289,6 +307,24 @@
 2020-05-11,"San Francisco","negative",553
 2020-05-12,"San Francisco","positive",21
 2020-05-12,"San Francisco","negative",683
+2020-05-13,"San Francisco","positive",47
+2020-05-13,"San Francisco","negative",1129
+2020-05-14,"San Francisco","positive",46
+2020-05-14,"San Francisco","negative",1162
+2020-05-15,"San Francisco","positive",42
+2020-05-15,"San Francisco","negative",1176
+2020-05-16,"San Francisco","positive",16
+2020-05-16,"San Francisco","negative",555
+2020-05-17,"San Francisco","positive",25
+2020-05-17,"San Francisco","negative",618
+2020-05-18,"San Francisco","positive",34
+2020-05-18,"San Francisco","negative",1662
+2020-05-19,"San Francisco","positive",65
+2020-05-19,"San Francisco","negative",1756
+2020-05-20,"San Francisco","positive",47
+2020-05-20,"San Francisco","negative",1310
+2020-05-21,"San Francisco","positive",312
+2020-05-21,"San Francisco","negative",21
 2020-02-28,"San Mateo","positive",1
 2020-02-28,"San Mateo","negative",3
 2020-02-29,"San Mateo","positive",0
@@ -431,8 +467,30 @@
 2020-05-07,"San Mateo","negative",541
 2020-05-08,"San Mateo","positive",11
 2020-05-08,"San Mateo","negative",442
-2020-05-09,"San Mateo","positive",6
-2020-05-09,"San Mateo","negative",188
+2020-05-09,"San Mateo","positive",13
+2020-05-09,"San Mateo","negative",289
+2020-05-10,"San Mateo","positive",9
+2020-05-10,"San Mateo","negative",198
+2020-05-11,"San Mateo","positive",32
+2020-05-11,"San Mateo","negative",692
+2020-05-12,"San Mateo","positive",27
+2020-05-12,"San Mateo","negative",544
+2020-05-13,"San Mateo","positive",29
+2020-05-13,"San Mateo","negative",280
+2020-05-14,"San Mateo","positive",39
+2020-05-14,"San Mateo","negative",557
+2020-05-15,"San Mateo","positive",37
+2020-05-15,"San Mateo","negative",897
+2020-05-16,"San Mateo","positive",6
+2020-05-16,"San Mateo","negative",222
+2020-05-17,"San Mateo","positive",19
+2020-05-17,"San Mateo","negative",122
+2020-05-18,"San Mateo","positive",26
+2020-05-18,"San Mateo","negative",643
+2020-05-19,"San Mateo","positive",18
+2020-05-19,"San Mateo","negative",288
+2020-05-20,"San Mateo","positive",5
+2020-05-20,"San Mateo","negative",88
 2020-03-17,"Santa Clara","positive",23
 2020-03-17,"Santa Clara","negative",174
 2020-03-18,"Santa Clara","positive",21
@@ -541,8 +599,30 @@
 2020-05-08,"Santa Clara","negative",1065
 2020-05-09,"Santa Clara","positive",16
 2020-05-09,"Santa Clara","negative",1143
-2020-05-10,"Santa Clara","positive",1
-2020-05-10,"Santa Clara","negative",830
+2020-05-10,"Santa Clara","positive",10
+2020-05-10,"Santa Clara","negative",1011
+2020-05-11,"Santa Clara","positive",6
+2020-05-11,"Santa Clara","negative",773
+2020-05-12,"Santa Clara","positive",11
+2020-05-12,"Santa Clara","negative",1288
+2020-05-13,"Santa Clara","positive",16
+2020-05-13,"Santa Clara","negative",1452
+2020-05-14,"Santa Clara","positive",18
+2020-05-14,"Santa Clara","negative",1897
+2020-05-15,"Santa Clara","positive",21
+2020-05-15,"Santa Clara","negative",1806
+2020-05-16,"Santa Clara","positive",25
+2020-05-16,"Santa Clara","negative",1263
+2020-05-17,"Santa Clara","positive",13
+2020-05-17,"Santa Clara","negative",524
+2020-05-18,"Santa Clara","positive",17
+2020-05-18,"Santa Clara","negative",898
+2020-05-19,"Santa Clara","positive",12
+2020-05-19,"Santa Clara","negative",1285
+2020-05-20,"Santa Clara","positive",18
+2020-05-20,"Santa Clara","negative",1562
+2020-05-21,"Santa Clara","positive",6
+2020-05-21,"Santa Clara","negative",1317
 2020-04-01,"Santa Cruz","positive",59
 2020-04-01,"Santa Cruz","negative",794
 2020-04-02,"Santa Cruz","positive",0
@@ -647,131 +727,5 @@
 2020-05-21,"Santa Cruz","negative",306
 2020-05-22,"Santa Cruz","positive",12
 2020-05-22,"Santa Cruz","negative",209
-2020-03-17,"Monterey","positive",2
-2020-03-17,"Monterey","negative",98
-2020-03-18,"Monterey","positive",0
-2020-03-18,"Monterey","negative",0
-2020-03-19,"Monterey","positive",0
-2020-03-19,"Monterey","negative",0
-2020-03-20,"Monterey","positive",3
-2020-03-20,"Monterey","negative",99
-2020-03-21,"Monterey","positive",2
-2020-03-21,"Monterey","negative",-2
-2020-03-22,"Monterey","positive",4
-2020-03-22,"Monterey","negative",-4
-2020-03-23,"Monterey","positive",3
-2020-03-23,"Monterey","negative",66
-2020-03-24,"Monterey","positive",6
-2020-03-24,"Monterey","negative",-6
-2020-03-25,"Monterey","positive",4
-2020-03-25,"Monterey","negative",90
-2020-03-26,"Monterey","positive",0
-2020-03-26,"Monterey","negative",0
-2020-03-27,"Monterey","positive",3
-2020-03-27,"Monterey","negative",35
-2020-03-28,"Monterey","positive",5
-2020-03-28,"Monterey","negative",44
-2020-03-29,"Monterey","positive",4
-2020-03-29,"Monterey","negative",-4
-2020-03-30,"Monterey","positive",6
-2020-03-30,"Monterey","negative",158
-2020-03-31,"Monterey","positive",6
-2020-03-31,"Monterey","negative",316
-2020-04-01,"Monterey","positive",5
-2020-04-01,"Monterey","negative",71
-2020-04-02,"Monterey","positive",4
-2020-04-02,"Monterey","negative",-4
-2020-04-03,"Monterey","positive",5
-2020-04-03,"Monterey","negative",-5
-2020-04-04,"Monterey","positive",0
-2020-04-04,"Monterey","negative",0
-2020-04-05,"Monterey","positive",1
-2020-04-05,"Monterey","negative",285
-2020-04-06,"Monterey","positive",1
-2020-04-06,"Monterey","negative",139
-2020-04-07,"Monterey","positive",5
-2020-04-07,"Monterey","negative",-5
-2020-04-08,"Monterey","positive",2
-2020-04-08,"Monterey","negative",-2
-2020-04-09,"Monterey","positive",8
-2020-04-09,"Monterey","negative",74.7142857142858
-2020-04-10,"Monterey","positive",3
-2020-04-10,"Monterey","negative",79.7142857142858
-2020-04-11,"Monterey","positive",5
-2020-04-11,"Monterey","negative",77.7142857142858
-2020-04-12,"Monterey","positive",0
-2020-04-12,"Monterey","negative",82.7142857142858
-2020-04-13,"Monterey","positive",13
-2020-04-13,"Monterey","negative",69.7142857142858
-2020-04-14,"Monterey","positive",8
-2020-04-14,"Monterey","negative",74.7142857142858
-2020-04-15,"Monterey","positive",11
-2020-04-15,"Monterey","negative",71.7142857142853
-2020-04-16,"Monterey","positive",17
-2020-04-16,"Monterey","negative",60
-2020-04-17,"Monterey","positive",0
-2020-04-17,"Monterey","negative",77
-2020-04-18,"Monterey","positive",5
-2020-04-18,"Monterey","negative",72
-2020-04-19,"Monterey","positive",7
-2020-04-19,"Monterey","negative",70
-2020-04-20,"Monterey","positive",2
-2020-04-20,"Monterey","negative",75
-2020-04-21,"Monterey","positive",4
-2020-04-21,"Monterey","negative",73
-2020-04-22,"Monterey","positive",10
-2020-04-22,"Monterey","negative",67
-2020-04-23,"Monterey","positive",5
-2020-04-23,"Monterey","negative",72
-2020-04-24,"Monterey","positive",7
-2020-04-24,"Monterey","negative",70
-2020-04-25,"Monterey","positive",7
-2020-04-25,"Monterey","negative",70
-2020-04-26,"Monterey","positive",2
-2020-04-26,"Monterey","negative",75
-2020-04-27,"Monterey","positive",6
-2020-04-27,"Monterey","negative",71
-2020-04-28,"Monterey","positive",15
-2020-04-28,"Monterey","negative",62
-2020-04-29,"Monterey","positive",7
-2020-04-29,"Monterey","negative",70
-2020-04-30,"Monterey","positive",9
-2020-04-30,"Monterey","negative",68
-2020-05-01,"Monterey","positive",4
-2020-05-01,"Monterey","negative",73
-2020-05-02,"Monterey","positive",9
-2020-05-02,"Monterey","negative",68
-2020-05-03,"Monterey","positive",2
-2020-05-03,"Monterey","negative",75
-2020-05-04,"Monterey","positive",4
-2020-05-04,"Monterey","negative",73
-2020-05-05,"Monterey","positive",6
-2020-05-05,"Monterey","negative",71
-2020-05-06,"Monterey","positive",3
-2020-05-06,"Monterey","negative",74
-2020-05-07,"Monterey","positive",17
-2020-05-07,"Monterey","negative",60
-2020-05-08,"Monterey","positive",10
-2020-05-08,"Monterey","negative",67
-2020-05-09,"Monterey","positive",2
-2020-05-09,"Monterey","negative",199
-2020-05-10,"Monterey","positive",9
-2020-05-10,"Monterey","negative",192
-2020-05-11,"Monterey","positive",11
-2020-05-11,"Monterey","negative",190
-2020-05-12,"Monterey","positive",9
-2020-05-12,"Monterey","negative",192
-2020-05-13,"Monterey","positive",9
-2020-05-13,"Monterey","negative",192
-2020-05-14,"Monterey","positive",5
-2020-05-14,"Monterey","negative",210.333333333333
-2020-05-15,"Monterey","positive",6
-2020-05-15,"Monterey","negative",209.333333333333
-2020-05-16,"Monterey","positive",13
-2020-05-16,"Monterey","negative",202.333333333334
-2020-05-17,"Monterey","positive",3
-2020-05-17,"Monterey","negative",6
-2020-05-18,"Monterey","positive",5
-2020-05-18,"Monterey","negative",327
-2020-05-19,"Monterey","positive",6
-2020-05-19,"Monterey","negative",304
+2020-05-23,"Santa Cruz","positive",6
+2020-05-23,"Santa Cruz","negative",215
